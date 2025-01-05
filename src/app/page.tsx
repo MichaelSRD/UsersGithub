@@ -51,6 +51,8 @@ export default function Home() {
       const data = await response.json()
       setEspera(data);
     } catch (err) {
+      console.log(err);
+      
       setEspera(null)
       setRepos([])
     } finally {
